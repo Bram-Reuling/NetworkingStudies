@@ -15,7 +15,7 @@ enable_testing()
 add_executable(${NETWORK_PROJECT_NAME}Client src/EntryPoint.cpp src/Application.cpp)
 add_executable(${NETWORK_PROJECT_NAME}ClientTest test/main.cpp test/HelloTest.cpp)
 
-target_include_directories(${NETWORK_PROJECT_NAME}Client PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/${NETWORK_PROJECT_NAME}>)
+target_include_directories(${NETWORK_PROJECT_NAME}Client PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/ProjectClient>)
 
 target_link_libraries(
         ${NETWORK_PROJECT_NAME}ClientTest

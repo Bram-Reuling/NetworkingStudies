@@ -1,1 +1,1 @@
-add_subdirectory(BasicProject)
+add_subdirectory(0_BasicProject)

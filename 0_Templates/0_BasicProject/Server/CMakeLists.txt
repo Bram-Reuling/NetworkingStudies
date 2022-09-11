@@ -15,7 +15,7 @@ enable_testing()
 add_executable(${NETWORK_PROJECT_NAME}Server src/EntryPoint.cpp src/Application.cpp)
 add_executable(${NETWORK_PROJECT_NAME}ServerTest test/main.cpp test/HelloTest.cpp)
 
-target_include_directories(${NETWORK_PROJECT_NAME}Server PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/${NETWORK_PROJECT_NAME}>)
+target_include_directories(${NETWORK_PROJECT_NAME}Server PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/ProjectServer>)
 
 target_link_libraries(
         ${NETWORK_PROJECT_NAME}ServerTest
