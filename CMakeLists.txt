@@ -6,3 +6,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 project(NetworkingStudies)
 
 add_subdirectory(0_Templates)
+add_subdirectory(1_Basics)
