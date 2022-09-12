@@ -19,7 +19,8 @@ target_include_directories(${NETWORK_PROJECT_NAME}Client PRIVATE $<BUILD_INTERFA
 
 target_link_libraries(
         ${NETWORK_PROJECT_NAME}ClientTest
-        GTest::gtest_main
+        gtest
+        gmock
 )
 
 include(GoogleTest)
